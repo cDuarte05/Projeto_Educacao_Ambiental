@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação ambiental</title> <!--Depois a gente vê um nome melhor-->
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/sampletree.png">
+</head>
+
+<body class="forms" style="background-color: rgb(247,237, 227);">
+    <div class="acessibilidade">
+        <p class="aces"><a href="../pags/HC/HCformu.html">Ativar Alto Contraste</a></p>
+    </div>
+    <header>
+        <img class="logo" src="../img/sampletree.png" alt="Imagem da logo do site, uma árvore">
+        <h1>Educação ambiental</h1>
+        <img class="botao" src="../img/buttonunpress.png" alt="Botão para abrir o menu" onclick="menuinteraction()">
+        <nav id="menu">
+            <a id="op1" href="index.html"> Sobre nós </a>
+            <a id="op2" href="oque.html"> Educação Ambiental </a>
+            <a id="op3" href="legislacao.html"> Legislações e leis </a>
+            <a class="changing" id="op4" href="ods.html"><p>Objetivos de Desenvolvimento Sustentável</p></a>
+            <a id="op5" href="material.html">Material didático</a>
+        </nav>
+        <!--zero criatividade para fazer algum header legal-->
+    </header>
+    <main>
+        <div class="container">
+            <section class="formulario">
+                <form action="" method="post">
+                    <h2>Nos Apoie</h2>
+                    <p><label for="nome">Digite seu nome: </label>
+                        <input type="text" name="nome" size="30" maxlength="50" required
+                            placeholder="Digite seu nome aqui" aria-placeholder="Digite seu nome aqui">
+                    </p>
+
+                    <p><label for="email">Digite seu email: </label>
+                        <input type="email" name="email" size="30" required
+                            pattern="[a-z]{3,50}[@]{1}[a-z]{3,50}[.]{1}[a-z]{3,50}" placeholder="Digite seu email aqui">
+                    </p>
+
+                    <p><label for="telefone">Telefone:</label>
+                        <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required
+                            aria-placeholder="Digite seu número de telefone no formato (XX) XXXXX-XXXX">
+                    </p>
+
+                    <p><label for="city">Digite sua cidade: </label>
+                        <input type="text" name="city" style="margin-right:10px ;" required
+                            placeholder="Digite o nome de sua cidade aqui">
+                    </p>
+                    <p> <label for="estado">Estado: </label>
+                        <select name="estado" required
+                            aria-placeholder="Digite sua cidade aqui no formato de sígla de duas letras">
+                            <option></option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </p>
+
+                    <p><label for="nasc">Data de Nascimento: </label>
+                        <input type="date" name="nasc" size="30" min="1900-01-01" max="2100-12-31" required>
+                    </p>
+
+                    <p><label for="grau">Grau de Escolaridade: </label>
+                        <select name="grau" required aria-placeholder="Escolha seu grau de escolaridade">
+                            <option><!--nada--></option>
+                            <option>Educação infantil incompleto</option>
+                            <option>Educação infantil completo</option>
+                            <option>Fundamental incompleto</option>
+                            <option>Fundamental completo</option>
+                            <option>Ensino Médio incompleto</option>
+                            <option>Ensino Médio completo</option>
+                            <option>Ensino Superior incompleto</option>
+                            <option>Ensino Superior completo</option>
+                            <option>Pós-graduação</option>
+                            <option>Mestrado</option>
+                            <option>Doutorado</option>
+                        </select>
+                    </p>
+                    <p><label for="coment">Alguma ideia ou algo que deseja nos dizer? Deixe abaixo sua mensagem </label>
+                        <br>
+                        <br>
+                        <textarea name="coment" rows="4" cols="50" required placeholder="Mensagem"> </textarea>
+                    </p>
+                    <p><input type="submit" value="Enviar" name="enviar" required></p>
+                    <p><input type="reset" value="Limpar Respostas" name="limpar" required></p>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.6906511878046!2d-47.233738523779685!3d-22.850931835879003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bc16c66f0bed%3A0x1aee5c111efc6196!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20Campus%20Hortol%C3%A2ndia!5e0!3m2!1spt-PT!2sbr!4v1719013799638!5m2!1spt-PT!2sbr"
+            width="300" height="225" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br><br>
+        <p><img class="foto" src="../img/luis.png" alt="Foto do desenvolvedor e estudante Luis Miguel"><b>Luis Miguel,
+                desenvolvedor e estudante do curso de ADS do IFSP Campus Hortolândia</b></p> <br>
+        <p><img class="foto" src="../img/henrique.png"
+                alt="Foto do desenvolvedor e estudante Henrique Chaves"><b>Henrique Chaves, desenvolvedor e estudante do
+                curso de ADS do IFSP Campus Hortolândia</b></p> <br>
+        <p><img class="foto" src="https://moodle.hto.ifsp.edu.br/theme/image.php/boost/theme/1719290089/favicon"
+                alt="Logo do IFSP"><b>Matéria de Desenvolvimento Web 1, ministrada por Daniela Mastrangelo</b></p>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

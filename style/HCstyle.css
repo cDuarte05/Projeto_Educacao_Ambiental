@@ -1,0 +1,420 @@
+img.logo {
+    height: 110px;
+    width: 110px;
+    align-items: center;
+}
+
+img.botao {
+    display: none;
+}
+
+.acessibilidade {
+    background-color: #000000;
+    display: flex;
+    height: 40px;
+    padding: 5px;
+}
+
+p.aces {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+p.aces a {
+    text-decoration: none;
+    border: solid black 1px;
+    border-radius: 30px;
+    color: yellow;
+    padding: 5px;
+}
+
+p.aces a:hover {
+    color: rgb(255, 255, 105);
+    border: solid yellow 1px;
+}
+
+header{
+    background-color: #000000;
+    border-bottom: solid yellow 15px;
+    padding: 30px;
+    display: flex;
+    color: yellow;
+}
+
+header h1 {
+    align-self: center;
+}
+
+
+header nav {
+    align-self: center;
+    margin-left: auto;
+}
+
+header nav a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: yellow;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    transition: all .2s;
+}
+header nav a:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+body { 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar { 
+    display: none;
+}
+
+body h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+main {
+    text-align: justify;
+    padding-top: 38px;
+    padding-bottom: 35px;
+    color: white;
+}
+
+.formulario{
+    background-color: #5c5c5c;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 45);
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+}
+
+.formulario p{
+    margin-bottom: 25px;
+}
+.formulario h2{
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: yellow;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white ;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea{ 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #BAAD78 ;
+    outline: none;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="date"]:invalid,
+input[type="tel"]:invalid,
+select:invalid {
+    border: dashed red 1px;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="date"]:valid,
+input[type="tel"]:valid,
+select:valid {
+    border: dashed green 1px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+    color: yellow;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="submit"]:active {
+    transform: translateY(2px);
+}
+
+input[type="submit"]:hover {
+    background-color: #8cab47;
+    color: #000000;
+}
+
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+    color: yellow;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="reset"]:active {
+    transform: translateY(2px);
+}
+
+input[type="reset"]:hover {
+    background-color: #8cab47;
+    color: #000000;
+}
+
+
+.material ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.material li{
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.10);
+}
+
+.material a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.material a:hover {
+    text-decoration: underline;
+    font-size: large;
+    transition: all 0.5;
+}
+
+.img00{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 750px;
+    height: auto;
+    padding: 15px;
+}
+.carousel{
+    padding-top: 10px;
+    padding-bottom: 25px ;
+}
+
+.card {
+    margin: 0 auto;
+    width: 85%; 
+    font-size: 14px; 
+    margin-bottom: 25px;
+}
+
+.card-header {
+    font-size: 16px; 
+    padding: 10px; 
+}
+
+.blockquote p {
+    text-align: center;
+    font-size: 14px; 
+    line-height: 1.4; /* Ajustar o espaçamento entre linhas */
+}
+
+.changing::after {
+    content: "Objetivos de Desenvolvimento Sustentável";
+}
+
+.changing {
+    height: 44px;
+}
+
+.changing p {
+    font-size: 0%;
+    display: inline-block;
+    
+}
+
+footer {
+    border-top: solid 15px yellow;
+    align-items: center;
+    padding: 15px;
+    display: flex;
+    background-color: black;
+    margin-top: auto;
+}
+
+footer p {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: yellow;
+}
+
+.foto {
+    height: 110px;
+    width: auto;
+    border: solid 2px yellow;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    img.logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 180px;
+        height: 180px;
+    }
+
+    img.botao {
+        display: block;
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header h1 {
+        display: none;
+    }
+
+    header nav {
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
+
+    header nav a {
+        transition: all 0s;
+        text-align: center;
+        display: block;
+        border-bottom: yellow solid 8px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        margin: 5px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        width: 50%;
+    }
+
+    .changing {
+        height: 52px;
+    }
+
+    .changing::after{
+        content: "Objetivos de Desenvolvimento Sustentável";
+    }
+
+    .img00 {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    img.logo {
+        align-self: center;
+        width: 180px;
+        height: 180px;
+    }
+
+    img.botao {
+        display: block;
+        width: 80px;
+        align-self: center;
+    }
+
+    header nav {
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
+
+    header nav a {
+        text-align: center;
+        display: block;
+        border-bottom: solid yellow 8px;
+    }
+
+    main {
+        margin: 5px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        width: 80%;
+    }
+
+    .changing::after {
+        content: "ODSs";
+    }
+
+    .changing {
+        height: 52px;
+    }
+
+    .img00 {
+        width: 95%;
+    }
+}
