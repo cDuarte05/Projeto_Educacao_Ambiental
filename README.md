@@ -2,7 +2,10 @@
 
 Este projeto foi desenvolvido como trabalho final da disciplina de Desenvolvimento Web, ministrada no 1º semestre pela Professora Daiane.
 
-Projeto realizado em dupla pelos alunos **Henrique Duarte** e **Luis Miguel Solera**.
+## Desenvolvedores
+
+- Henrique Duarte - [Perfil GitHub](https://github.com/cDuarte05)
+- Luis Miguel Solera - [Perfil GitHub](https://github.com/LMSolera)
 
 ## Descrição do Projeto
 
